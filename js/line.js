@@ -23,4 +23,13 @@ var line = new THREE.Line(geometry, material);
 
 scene.add(line);
 
-renderer.render(scene, camera);
+function render() {
+  requestAnimationFrame( render );
+  // cube.rotation.x += 0.05;
+  line.rotation.x += 0.08;
+  line.rotation.y += 0.02;
+  //Anything I want to render will go here...
+  renderer.render( scene, camera );
+}
+
+render();
