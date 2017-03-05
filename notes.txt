@@ -1,7 +1,0 @@
-Creating the Scene
-Necessities: A scene, a camera, and a renderer
-
-Declare a scene, camera and renderer
-
-cube.rotation.x += 0.05; rotates around x-axis. 
-cube.rotation.y += 0.05; rotates around y-axis
