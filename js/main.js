@@ -30,6 +30,7 @@ function render() {
   requestAnimationFrame( render );
   // cube.rotation.x += 0.05;
   cube.rotation.y += 0.05;
+  cube.rotation.x += 0.04;
   //Anything I want to render will go here...
   renderer.render( scene, camera );
 }
