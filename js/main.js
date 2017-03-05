@@ -14,7 +14,7 @@ document.body.appendChild(renderer.domElement);
 var geometry = new THREE.BoxGeometry( 1, 1, 1);
 //Box Geometry contains all the point vertices and fill faces of the cube.
 
-var material = new THREE.MeshBasicMaterial( { color: 0x00ff00} );
+var material = new THREE.MeshBasicMaterial( { color: 0x00ff00, wireframe: true} );
 //All materials take an object of properties which will be applied to them.
 
 var cube = new THREE.Mesh( geometry, material);
@@ -29,8 +29,8 @@ camera.position.z = 5;
 function render() {
   requestAnimationFrame( render );
   // cube.rotation.x += 0.05;
-  cube.rotation.y += 0.05;
-  cube.rotation.x += 0.04;
+  cube.rotation.y += 0.01;
+  cube.rotation.x += 0.01;
   //Anything I want to render will go here...
   renderer.render( scene, camera );
 }
